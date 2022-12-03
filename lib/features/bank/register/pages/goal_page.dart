@@ -135,29 +135,34 @@ class _GoalPageState extends State<GoalPage> {
                 ColorManager.secColor,
               ],
             )),
-        child: Column(
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(15),
-                child: Column(
-                  children: [
-                    svgImage(path: model.img),
-                    space20Vertical,
-                    myText(
-                      title: model.title,
-                      style: Style.large,
-                      color: Colors.white,
-                    ),
-                    space10Vertical,
-                    myText(
-                        title: model.body,
-                        style: Style.small,
-                        align: TextAlign.center,
-                        color: Colors.white),
-                  ],
+              Expanded(
+                flex: 3,
+                  child: svgImage(path: model.img),
+              ),
+              space20Vertical,
+              Expanded(
+                flex: 1,
+                child: myText(
+                  title: model.title,
+                  style: Style.large,
+                  color: Colors.white,
                 ),
               ),
+              space10Vertical,
+              Expanded(
+                flex: 1,
+                child: myText(
+                    title: model.body,
+                    style: Style.small,
+                    align: TextAlign.center,
+                    color: Colors.white),
+              ),
             ],
+          ),
         ),
       );
 }

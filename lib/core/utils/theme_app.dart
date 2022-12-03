@@ -36,8 +36,8 @@ class ThemeApp {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           elevation: 0.0,
-          backgroundColor: ColorManager.mainColor, // background (button) color
-          foregroundColor: Colors.white,
+          // backgroundColor: ColorManager.mainColor, // background (button) color
+          // foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20)),
 // foreground (text) color

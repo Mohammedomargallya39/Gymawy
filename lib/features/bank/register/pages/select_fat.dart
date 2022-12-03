@@ -66,32 +66,36 @@ class _SelectFatState extends State<SelectFat> {
     return Column(
         children: [
           space20Vertical,
-          myText(title:AppString.select_fat, style: Style.large),
-          myText(title:AppString.it_will_help, style: Style.small),
+          const myText(title:AppString.select_fat, style: Style.large),
+          const myText(title:AppString.it_will_help, style: Style.small),
           space20Vertical,
-          SizedBox(
-            height: context.heightScreenWithOutBottom * 0.55,
-            child: PageView.builder(
-              controller: pageController,
-              allowImplicitScrolling: true,
-              pageSnapping: true,
-              itemBuilder: (context, index) {
-              return  SizedBox(
-                  width: 50,
-                  height: 200,
-                  child: svgImage(path: listFat[index],),
-                );
-            },
-              itemCount: listFat.length,
-              onPageChanged: (index) {
-                setState(() {
-                  fatValue = double.parse(index.toString());
-                });
+          Expanded(
+            flex: 3,
+            child: SizedBox(
+              height: context.heightScreenWithOutBottom * 0.55,
+              child: PageView.builder(
+                controller: pageController,
+                allowImplicitScrolling: true,
+                pageSnapping: true,
+                
+                itemBuilder: (context, index) {
+                return  SizedBox(
+                    width: 50,
+                    height: 200,
+                    child: svgImage(path: listFat[index],),
+                  );
               },
+                itemCount: listFat.length,
+                onPageChanged: (index) {
+                  setState(() {
+                    fatValue = double.parse(index.toString());
+                  });
+                },
+              ),
             ),
           ),
           space20Vertical,
-          Expanded(flex: 1,
+          Expanded(flex: 2,
               child:Column(
               children: [
               Slider(

@@ -226,3 +226,10 @@ var space100Horizontal = SizedBox(
 );
 
 String? token = '';
+double? currentLat = 0;
+double? currentLng = 0;
+
+void debugPrintFullText(String text) {
+  final pattern = RegExp('.{1,800}'); // 800 is the size of each chunk
+  pattern.allMatches(text).forEach((match) => debugPrint(match.group(0)));
+}

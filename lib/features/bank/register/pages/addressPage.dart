@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/widgets/myElevatedButton.dart';
+import 'package:gym/core/widgets/my_icon_button.dart';
+import 'package:gym/features/bank/register/pages/set_your_location.dart';
 import '../../../../core/cubit/bank_cubit/cubit.dart';
 import '../../../../core/utils/appString.dart';
 import '../../../../core/widgets/loadingPage.dart';
@@ -54,6 +56,17 @@ class _AddressPageState extends State<AddressPage> {
                 child: Column(
                   children: [
                     svgImage(path: Assets.images.svg.location),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: DefaultIconButton(
+                          icon: Icons.add_location_alt_outlined,
+                          onPressed: ()
+                          {
+                            navigateTo(context, const SetYourLocation());
+                          }
+                      ),
+                    ),
+                    space20Vertical,
                     CustomDropdown.search(
                       hintText: AppString.select_country,
                       items: listCountry,

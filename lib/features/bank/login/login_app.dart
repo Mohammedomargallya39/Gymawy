@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                         height: context.heightScreenWithOutBottom * 0.09,
                         text: AppString.login,
                         onPressed: () {
-                          navigateTo(context, PinPage());
+                          // navigateTo(context, PinPage());
                         }),
                     space20Vertical,
                     SizedBox(
@@ -136,7 +136,7 @@ class _LoginPageState extends State<LoginPage> {
                       children: [
                         GestureDetector(
                           onTap: (){
-                            navigateTo(context, AddressPage());
+                            // navigateTo(context, AddressPage());
                           },
                           child: svgImage(
                             path: Assets.images.svg.facebbokBorder,
