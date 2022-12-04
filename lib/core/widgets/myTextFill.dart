@@ -18,6 +18,9 @@ class myTextFill extends StatefulWidget {
   final TextInputAction textInputAction;
   final TextInputType type;
   final ValueChanged<String>? onSubmit;
+  final TextStyle? hintStyle;
+  final Color? textFormFillColor;
+
 
 
 
@@ -37,6 +40,8 @@ class myTextFill extends StatefulWidget {
     this.onSubmit,
     this.colorPrefixIcon,
     this.textInputAction = TextInputAction.next,
+    this.hintStyle,
+    this.textFormFillColor = Colors.black12,
 
   });
 
@@ -56,8 +61,8 @@ class _CustomInputState extends State<myTextFill> {
         padding: const EdgeInsets.only(left: 14, right: 14, top: 4),
         margin: widget.margin,
         decoration: BoxDecoration(
-          color: ColorManager.textFieldColor,
-          borderRadius: BorderRadius.circular(10),
+          color: widget.textFormFillColor,
+          borderRadius: BorderRadius.circular(20),
           // border: Border.all(width: 1, color: ColorManager().darkColor),
         ),
         child: TextFormField (
@@ -109,9 +114,7 @@ class _CustomInputState extends State<myTextFill> {
             floatingLabelBehavior: FloatingLabelBehavior.always,
             border: InputBorder.none,
             hintText: widget.hint,
-            hintStyle: Theme.of(context).textTheme.displaySmall!.copyWith(
-                  color: ColorManager.darkColor.withOpacity(0.5),
-            ),
+            hintStyle: widget.hintStyle,
           ),
         ),
       ),

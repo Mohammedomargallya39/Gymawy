@@ -11,7 +11,6 @@ import 'core/cubit/bank_cubit/state.dart';
 import 'core/services/injection.dart' as sl;
 import 'core/services/injection.dart';
 import 'core/utils/constants.dart';
-import 'features/bank/home/home_bank.dart';
 import 'features/bank/splash_screen/splash.dart';
 
 void main() async {
