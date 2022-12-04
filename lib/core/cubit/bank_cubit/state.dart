@@ -22,6 +22,10 @@ class ChangeModeState extends MainState {
   List<Object?> get props => [];
 }
 
+class ChangeSlider extends MainState {
+  List<Object?> get props => [];
+}
+
 class ChangeDarkMode extends MainState {
   List<Object?> get props => [];
 }
@@ -30,6 +34,11 @@ class ChangeDarkMode extends MainState {
 class ChangePage extends MainState {
   List<Object?> get props => [];
 }
+
+class BottomChanged extends MainState {
+  List<Object?> get props => [];
+}
+
 class GoalChangedColor extends MainState {
   List<Object?> get props => [];
 }

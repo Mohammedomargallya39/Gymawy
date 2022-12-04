@@ -62,6 +62,14 @@ class MainBloc extends Cubit<MainState> {
 
   int currentIndex = 0;
   PageController pageController = PageController();
+  void bottomChanged(
+      int index,
+      context
+      ){
+    currentNavIndex = index;
+    pageController.jumpToPage(index);
+    emit(BottomChanged());
+  }
 
   Future<void> nextPage(bool isNext,BuildContext context) async {
     isNext ? currentIndex++ : currentIndex--;
@@ -142,5 +150,6 @@ class MainBloc extends Cubit<MainState> {
     emit(ChangeModeState());
   }
 
+  int currentNavIndex = 0;
 
 }

@@ -14,6 +14,8 @@ import '../../../core/cubit/bank_cubit/state.dart';
 import '../../../core/utils/appString.dart';
 import '../../../core/utils/constants.dart';
 import '../../../core/widgets/myTextFill.dart';
+import '../main_screen/home_client/home_client.dart';
+import '../main_screen/main_screen.dart';
 import '../register/pages/addressPage.dart';
 import '../register/pages/select_type_page.dart';
 import '../register/register_layout.dart';
@@ -107,6 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                         height: context.heightScreenWithOutBottom * 0.09,
                         text: AppString.login,
                         onPressed: () {
+                          navigateAndFinish(context, const MainScreen());
                           // navigateTo(context, PinPage());
                         }),
                     space20Vertical,

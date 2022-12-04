@@ -52,4 +52,29 @@ class AppString {
   static const pin_code = 'Enter the 6 digit Code sent to your mobile number';
   static const select_country = 'please select country';
   static const select_city = 'please select city';
+  static const notificationsNum = '1';
+  static const helloClient = 'Hello Bassel,';
+  static const ready = 'Ready for a challenge ?';
+  static const search = 'Search For Coaches Or Client';
+  static const suggestions = 'Suggestions';
+  static const plans = 'Plans';
+  static const exercise = 'Exercise';
+  static const clients = 'Clients';
+  static const todaySession = 'Today Session';
+  static const doNotMiss = 'Do not miss the fitness';
+  static const daysNum = 'Day 7';
+  static const fullBodyExercise = 'Full body exercise';
+  static const level = 'Level : Intermediate';
+  static const clock = '50 Min';
+  static const cal = '250 Cal';
+  static const startNow = 'Start Now';
+  static const home = 'Home';
+  static const settings = 'Settings';
+  static const profile = 'Profile';
+  static const searchMain = 'Search';
+
+
+
+
+
 }

@@ -134,14 +134,57 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/email.svg
   String get email => 'assets/images/svg/email.svg';
 
+  /// File path: assets/images/svg/profile_main_client.svg
+  String get profile_main_client => 'assets/images/svg/profile_main_client.svg';
+
+  /// File path: assets/images/svg/notifications.svg
+  String get notifications => 'assets/images/svg/notifications.svg';
+
+  /// File path: assets/images/svg/profile.svg
+  String get profile => 'assets/images/svg/profile.svg';
+
+  /// File path: assets/images/svg/filterSearch.svg
+  String get filterSearch => 'assets/images/svg/filterSearch.svg';
+
+  /// File path: assets/images/svg/clients.svg
+  String get clients => 'assets/images/svg/clients.svg';
+
+  /// File path: assets/images/svg/exercise.svg
+  String get exercise => 'assets/images/svg/exersice.svg';
+
+  /// File path: assets/images/svg/plans.svg
+  String get plans => 'assets/images/svg/plans.svg';
+
+  /// File path: assets/images/svg/bar.svg
+  String get bar => 'assets/images/svg/bar.svg';
+
+  /// File path: assets/images/svg/search.svg
+  String get search => 'assets/images/svg/search.svg';
+
+  /// File path: assets/images/svg/settings.svg
+  String get settings => 'assets/images/svg/settings.svg';
+
+  /// File path: assets/images/svg/person.svg
+  String get person => 'assets/images/svg/person.svg';
+
+  /// File path: assets/images/svg/client_section.svg
+  String get client_section => 'assets/images/svg/client_section.svg';
+
+  /// File path: assets/images/svg/clock.svg
+  String get clock => 'assets/images/svg/clock.svg';
+
+  /// File path: assets/images/svg/fire.svg
+  String get fire => 'assets/images/svg/fire.svg';
+
+
   /// File path: assets/images/svg/facebbok_border.svg
   String get facebbokBorder => 'assets/images/svg/facebbok_border.svg';
 
   /// File path: assets/images/svg/forget_pass.svg
   String get forgetPass => 'assets/images/svg/forget_pass.svg';
 
-  /// File path: assets/images/svg/group 2584.svg
-  String get group2584 => 'assets/images/svg/group 2584.svg';
+  /// File path: assets/images/svg/profile.svg
+  String get group2584 => 'assets/images/svg/profile.svg';
 
   /// File path: assets/images/svg/icon.svg
   String get icon => 'assets/images/svg/icon.svg';
