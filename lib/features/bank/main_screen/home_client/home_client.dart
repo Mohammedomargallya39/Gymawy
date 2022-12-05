@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gym/core/widgets/myTextFill.dart';
+import 'package:gym/features/bank/exercises/exercises_screen.dart';
 
 import '../../../../core/cubit/bank_cubit/cubit.dart';
 import '../../../../core/utils/appString.dart';
@@ -222,7 +223,11 @@ class _HomeClientScreenState extends State<HomeClientScreen> {
                           ),
                           onTap: ()
                           {
+                            if(index == 0){
 
+                            }else if (index == 1){
+                              navigateTo(context, const ExercisesScreen());
+                            }else{}
                           },
                         );
                       },
