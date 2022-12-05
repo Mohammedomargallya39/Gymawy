@@ -30,6 +30,10 @@ class ChangeDarkMode extends MainState {
   List<Object?> get props => [];
 }
 
+class ChangeCompletedState extends MainState {
+  List<Object?> get props => [];
+}
+
 
 class ChangePage extends MainState {
   List<Object?> get props => [];
@@ -52,6 +56,14 @@ class PasswordChanged extends MainState {
 }
 
 class MatchPassword extends MainState {
+  List<Object?> get props => [];
+}
+
+class ChangeCoachRadioButtonState extends MainState {
+  List<Object?> get props => [];
+}
+
+class ChangeClientRadioButtonState extends MainState {
   List<Object?> get props => [];
 }
 

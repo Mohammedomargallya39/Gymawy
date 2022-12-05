@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gym/core/cubit/bank_cubit/state.dart';
 import 'package:material_color_gen/material_color_gen.dart';
 
@@ -11,11 +12,13 @@ import '../../../features/bank/register/pages/goal_page.dart';
 import '../../../features/bank/register/pages/select_fat.dart';
 import '../../../features/bank/register/pages/select_type_page.dart';
 import '../../../features/bank/register/pages/social_media.dart';
+import '../../../gen/assets.gen.dart';
 import '../../services/cache_helper.dart';
 import '../../services/injection.dart';
 import '../../services/repository.dart';
 import '../../utils/constants.dart';
 import '../../utils/theme_app.dart';
+import '../../widgets/myText.dart';
 
 
 class MainBloc extends Cubit<MainState> {
@@ -150,6 +153,30 @@ class MainBloc extends Cubit<MainState> {
     emit(ChangeModeState());
   }
 
+  bool isCompleted = false;
+  void changeCompleted()
+  {
+    isCompleted = !isCompleted;
+
+    emit(ChangeCompletedState());
+  }
+
   int currentNavIndex = 0;
+
+  bool coachRadioButton = false;
+  bool clientRadioButton = false;
+  void changeToCoachRadioButton()
+  {
+    coachRadioButton = !coachRadioButton;
+    clientRadioButton = false;
+    emit(ChangeCoachRadioButtonState());
+  }
+
+  void changeToClientRadioButton()
+  {
+    coachRadioButton = false;
+    clientRadioButton = !clientRadioButton;
+    emit(ChangeClientRadioButtonState());
+  }
 
 }

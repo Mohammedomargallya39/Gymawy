@@ -72,6 +72,28 @@ class AppString {
   static const settings = 'Settings';
   static const profile = 'Profile';
   static const searchMain = 'Search';
+  static const markAsCompleted = 'Mark as completed';
+  static const completed = 'Completed';
+  static const exercises = 'Exercises';
+  static const frontPullUps = 'Front Pull ups';
+  static const sets = 'Sets';
+  static const reps = 'Reps';
+  static const rest = 'Rest';
+  static const benchPress = 'Bench Press';
+  static const equipment = 'Equipment Required';
+  static const barbell = 'Barbell, Bench, Plate, Lock';
+  static const target = 'Target Muscle';
+  static const chest = 'Chest, Shoulder, Triceps';
+  static const complete = 'Complete';
+  static const coaches = 'Coaches';
+  static const resultSearchName = 'Mohammed Omar';
+  static const resultSearchType = 'Fitness and Physiotherapy';
+  static const resultSearchLocation = '10th Of Ramadan';
+
+
+
+
+
 
 
 

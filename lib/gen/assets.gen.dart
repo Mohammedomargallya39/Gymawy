@@ -109,6 +109,9 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/arrow.svg
   String get arrow => 'assets/images/svg/arrow.svg';
 
+  /// File path: assets/images/svg/circle.svg
+  String get circle => 'assets/images/svg/circle.svg';
+
   /// File path: assets/images/svg/background.svg
   String get background => 'assets/images/svg/background.svg';
 
@@ -117,6 +120,18 @@ class $AssetsImagesSvgGen {
 
   /// File path: assets/images/svg/coach.svg
   String get coach => 'assets/images/svg/coach.svg';
+
+  /// File path: assets/images/svg/card.svg
+  String get card => 'assets/images/svg/card.svg';
+
+  /// File path: assets/images/svg/checked_icon.svg
+  String get checked_icon => 'assets/images/svg/checked_icon.svg';
+
+  /// File path: assets/images/svg/girls-bench-chest.svg
+  String get girlsBenchChest => 'assets/images/svg/girls-bench-chest.svg';
+
+  /// File path: assets/images/svg/strength-training_feat.svg
+  String get strengthTrainingFeat => 'assets/images/svg/strength-training_feat.svg';
 
   /// File path: assets/images/svg/couch.svg
   String get couch => 'assets/images/svg/couch.svg';
@@ -176,6 +191,11 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/fire.svg
   String get fire => 'assets/images/svg/fire.svg';
 
+  /// File path: assets/images/svg/exercise_photo.svg
+  String get exercise_photo => 'assets/images/svg/exercise_photo.svg';
+
+  /// File path: assets/images/svg/arrow_back.svg
+  String get arrow_back => 'assets/images/svg/arrow_back.svg';
 
   /// File path: assets/images/svg/facebbok_border.svg
   String get facebbokBorder => 'assets/images/svg/facebbok_border.svg';
