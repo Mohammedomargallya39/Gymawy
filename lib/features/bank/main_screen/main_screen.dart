@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
   [
       HomeClientScreen(),
       SearchScreen(),
-      SettingScreen(),
+      SettingsScreen(),
       ProfileScreen(),
   ];
   @override
