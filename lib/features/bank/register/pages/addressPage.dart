@@ -44,8 +44,8 @@ class _AddressPageState extends State<AddressPage> {
       future: readJson(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Center(
-            child: LoadingPage(),
+          return const Center(
+            child: const LoadingPage(),
           );
         } else {
           return StatefulBuilder(
@@ -59,7 +59,7 @@ class _AddressPageState extends State<AddressPage> {
                     Align(
                       alignment: Alignment.centerRight,
                       child: DefaultIconButton(
-                          icon: Icons.add_location_alt_outlined,
+                          icon: const Icon(Icons.add_location_alt_outlined),
                           onPressed: ()
                           {
                             navigateTo(context, const SetYourLocation());

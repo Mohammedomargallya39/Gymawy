@@ -35,6 +35,11 @@ class myText extends StatelessWidget {
 
   TextStyle getStyle(BuildContext context) {
     switch (style) {
+      case Style.extraSmall:
+        return Theme
+            .of(context)
+            .textTheme
+            .bodySmall!;
       case Style.small:
         return Theme
             .of(context)
