@@ -173,6 +173,39 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/bar.svg
   String get bar => 'assets/images/svg/bar.svg';
 
+  /// File path: assets/images/svg/location_icon.svg
+  String get location_icon => 'assets/images/svg/location_icon.svg';
+
+  /// File path: assets/images/svg/logout_icon.svg
+  String get logout_icon => 'assets/images/svg/logout_icon.svg';
+
+  /// File path: assets/images/svg/notifications_icon.svg
+  String get notifications_icon => 'assets/images/svg/notifications_icon.svg';
+
+  /// File path: assets/images/svg/share_icon.svg
+  String get share_icon => 'assets/images/svg/share_icon.svg';
+
+  /// File path: assets/images/svg/support_icon.svg
+  String get support_icon => 'assets/images/svg/support_icon.svg';
+
+  /// File path: assets/images/svg/facebook_icon.svg
+  String get facebook_icon => 'assets/images/svg/facebook_icon.svg';
+
+  /// File path: assets/images/svg/instagram.svg
+  String get instagram => 'assets/images/svg/instagram.svg';
+
+  /// File path: assets/images/svg/youtube.svg
+  String get youtube=> 'assets/images/svg/youtube.svg';
+
+  /// File path: assets/images/svg/tiktok.svg
+  String get tiktok => 'assets/images/svg/tiktok.svg';
+
+  /// File path: assets/images/svg/profile_pic.svg
+  String get profile_pic => 'assets/images/svg/profile_pic.svg';
+
+  /// File path: assets/images/svg/camera.svg
+  String get camera => 'assets/images/svg/camera.svg';
+
   /// File path: assets/images/svg/search.svg
   String get search => 'assets/images/svg/search.svg';
 
