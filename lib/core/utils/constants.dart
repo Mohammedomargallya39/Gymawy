@@ -97,6 +97,7 @@ AppBar defaultAppBar({
 }
 
 enum Style {
+  extraSmall,
   small,
   medium,
   large,

@@ -6,7 +6,7 @@ class DefaultIconButton extends StatelessWidget {
     required this.icon,
     required this.onPressed,
   }) : super(key: key);
-  IconData? icon;
+  Widget? icon;
   Function()? onPressed;
 
   @override
@@ -14,7 +14,7 @@ class DefaultIconButton extends StatelessWidget {
     return IconButton(
         onPressed: onPressed,
         iconSize: 33,
-        icon: Icon(icon),
+        icon: icon!,
     );
   }
 }
