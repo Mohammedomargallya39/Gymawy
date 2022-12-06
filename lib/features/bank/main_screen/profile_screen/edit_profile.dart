@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gym/core/cubit/bank_cubit/cubit.dart';
+import 'package:gym/core/utils/appString.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/widgets/back_button.dart';
 import 'package:gym/core/widgets/myElevatedButton.dart';
@@ -50,7 +51,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   },),
                   space15Horizontal,
                   const myText(
-                    title: 'Edit Your Profile',
+                    title: AppString.editYourProfile,
                     style: Style.medium,
                     fontWeight: FontWeight.bold,
                   )
@@ -64,29 +65,29 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       children: [
                         myTextFill(
                           controller: usernameController,
-                          hint: 'User Name',
+                          hint: AppString.userName,
                           svgImg: Assets.images.svg.user,
                         ),
                         myTextFill(
                           controller: fullNameController,
-                          hint: 'Full Name',
+                          hint: AppString.fullName,
                           svgImg: Assets.images.svg.user,
                         ),
                         myTextFill(
                           controller: emailController,
-                          hint: 'Email',
+                          hint: AppString.email,
                           svgImg: Assets.images.svg.email,
                           type: TextInputType.emailAddress,
                         ),
                         myTextFill(
                           controller: phoneController,
-                          hint: 'Phone',
+                          hint: AppString.phone,
                           svgImg: Assets.images.svg.phone,
                           type: TextInputType.phone,
                         ),
                         myTextFill(
                           controller: passwordController,
-                          hint: 'Password',
+                          hint: AppString.password,
                           svgImg: Assets.images.svg.lock,
                           type: TextInputType.visiblePassword,
                           isPassword: true,
@@ -94,7 +95,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         ),
                         myTextFill(
                           controller: confirmPasswordController,
-                          hint: 'Confirm Password',
+                          hint: AppString.confirm_password,
                           svgImg: Assets.images.svg.lock,
                           type: TextInputType.visiblePassword,
                           isPassword: true,
@@ -105,7 +106,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   ),
                 ),
               ),
-              myElevatedButton(text: 'Finish', onPressed: (){})
+              myElevatedButton(text: AppString.finish, onPressed: (){})
             ],
           ),
         ),
