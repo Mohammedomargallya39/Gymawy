@@ -7,6 +7,7 @@ class myElevatedButton extends StatelessWidget {
         required this.onPressed,
         this.height = 50.0,
         this.width = double.infinity,
+        this.fontSize
       })
       : super(key: key);
 
@@ -14,6 +15,7 @@ class myElevatedButton extends StatelessWidget {
   final double height;
   final double width;
   final Function()? onPressed;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,12 @@ class myElevatedButton extends StatelessWidget {
       width: width,
       child: ElevatedButton(
         onPressed: onPressed,
-        child: Text(text),
+        child: Text(
+          text,
+          style: TextStyle(
+            fontSize: fontSize,
+          ),
+        ),
       ),
     );
   }

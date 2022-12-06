@@ -1,15 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gym/core/cubit/bank_cubit/cubit.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/widgets/myElevatedButton.dart';
 import 'package:gym/core/widgets/myText.dart';
 import 'package:gym/core/widgets/my_icon_button.dart';
+import 'package:gym/features/bank/main_screen/profile_screen/edit_links.dart';
+import 'package:gym/features/bank/main_screen/profile_screen/edit_profile.dart';
 import 'package:gym/gen/assets.gen.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
 
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+
+  late MainBloc cubit;
+
+  @override
+  void initState() {
+    cubit = context.read<MainBloc>();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -45,9 +62,18 @@ class ProfileScreen extends StatelessWidget {
                           const myText(title: 'Abdo Saied',style: Style.medium,),
                           const myText(title: 'Coach',style: Style.small,),
                           space10Vertical,
-                          Align(
-                            alignment: AlignmentDirectional.bottomEnd,
-                              child: myElevatedButton(text: 'Edit Profile',width: 110.w, onPressed: (){}))
+                          Row(
+                            children: [
+                              myElevatedButton(text: 'Edit Links',fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
+                                navigateTo(context, const EditLinksScreen());
+                              }),
+                              space3Horizontal,
+                              myElevatedButton(text: 'Edit Profile',fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
+                                navigateTo(context, EditProfileScreen());
+                              })
+                            ],
+                          ),
+
                         ],
                       ),
                     ),

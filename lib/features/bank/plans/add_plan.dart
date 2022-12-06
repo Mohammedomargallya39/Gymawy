@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gym/core/cubit/bank_cubit/state.dart';
+import 'package:gym/core/widgets/back_button.dart';
 import 'package:gym/core/widgets/myButton.dart';
 import 'package:gym/core/widgets/myTextFill.dart';
 
@@ -24,6 +25,7 @@ class _AddPlanState extends State<AddPlan> {
 
   late MainBloc cubit;
   TextEditingController nameOfPlanController = TextEditingController();
+
   @override
   void initState() {
     cubit = context.read<MainBloc>();
@@ -36,26 +38,23 @@ class _AddPlanState extends State<AddPlan> {
       child: Scaffold(
         body: Padding(
           padding: designApp,
-          child: BlocBuilder<MainBloc,MainState>(
+          child: BlocBuilder<MainBloc, MainState>(
             builder: (context, state) {
               return Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      InkWell(
-                        child: SvgPicture.asset(
-                            Assets.images.svg.arrow_back
-                        ),
-                        onTap: ()
-                        {
+                      DefaultBackButton(function: () {
                           Navigator.pop(context);
                         },
                       ),
                       const Expanded(
                           child: Center(
                               child: myText(
-                                title: AppString.addPlan, style: Style.large ,fontFamily: 'poppins',
+                                title: AppString.addPlan,
+                                style: Style.large,
+                                fontFamily: 'poppins',
                               )
                           )
                       ),
@@ -68,7 +67,11 @@ class _AddPlanState extends State<AddPlan> {
                       myTextFill(
                         controller: nameOfPlanController,
                         hint: AppString.nameOfPlan,
-                        hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        hintStyle: Theme
+                            .of(context)
+                            .textTheme
+                            .bodyMedium!
+                            .copyWith(
                             fontWeight: FontWeight.w700,
                             fontSize: 12.sp,
                             color: Colors.grey,
@@ -91,7 +94,11 @@ class _AddPlanState extends State<AddPlan> {
                           children: [
                             Text(
                               AppString.visibility,
-                              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                              style: Theme
+                                  .of(context)
+                                  .textTheme
+                                  .bodyMedium!
+                                  .copyWith(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 12.sp,
                                   color: Colors.grey,
@@ -102,11 +109,11 @@ class _AddPlanState extends State<AddPlan> {
 
                             InkWell(
                               child: SvgPicture.asset(
-                                  cubit.isVisibilityPlanIcon!?
-                                  Assets.images.svg.visibility_false : Assets.images.svg.visibility_true
+                                  cubit.isVisibilityPlanIcon! ?
+                                  Assets.images.svg.visibility_false : Assets
+                                      .images.svg.visibility_true
                               ),
-                              onTap: ()
-                              {
+                              onTap: () {
                                 cubit.visibilityPlan();
                               },
                             ),
@@ -120,13 +127,12 @@ class _AddPlanState extends State<AddPlan> {
                   Padding(
                     padding: EdgeInsets.only(bottom: 40.h),
                     child: myButton(
-                        text: AppString.next,
-                        height: 50.h,
-                        textOnly: true,
-                        onPressed: ()
-                        {
+                      text: AppString.next,
+                      height: 50.h,
+                      textOnly: true,
+                      onPressed: () {
 
-                        },
+                      },
 
                     ),
                   )
