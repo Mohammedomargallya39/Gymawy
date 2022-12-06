@@ -182,6 +182,12 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/notifications_icon.svg
   String get notifications_icon => 'assets/images/svg/notifications_icon.svg';
 
+  /// File path: assets/images/svg/visibility_false.svg
+  String get visibility_false => 'assets/images/svg/visibility_false.svg';
+
+  /// File path: assets/images/svg/visibility_true.svg
+  String get visibility_true => 'assets/images/svg/visibility_true.svg';
+
   /// File path: assets/images/svg/share_icon.svg
   String get share_icon => 'assets/images/svg/share_icon.svg';
 

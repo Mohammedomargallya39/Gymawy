@@ -89,11 +89,11 @@ class AppString {
   static const resultSearchName = 'Mohammed Omar';
   static const resultSearchType = 'Fitness and Physiotherapy';
   static const resultSearchLocation = '10th Of Ramadan';
-
-
-
-
-
+  static const planType = 'Fat';
+  static const visibility = 'Visibility';
+  static const delete = 'Delete';
+  static const addPlan = 'Add Plan';
+  static const nameOfPlan = 'Name Of Plan';
 
 
 

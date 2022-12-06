@@ -67,6 +67,10 @@ class ChangeClientRadioButtonState extends MainState {
   List<Object?> get props => [];
 }
 
+class ChangeVisibilityPlanState extends MainState {
+  List<Object?> get props => [];
+}
+
 class Ahmed extends MainState {
   String name;
   Ahmed(this.name);

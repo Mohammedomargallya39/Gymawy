@@ -14,6 +14,7 @@ import '../../../../core/utils/colors_manager.dart';
 import '../../../../core/utils/constants.dart';
 import '../../../../core/widgets/myText.dart';
 import '../../../../gen/assets.gen.dart';
+import '../../plans/plans_screen.dart';
 
 class HomeClientScreen extends StatefulWidget {
   const HomeClientScreen({Key? key}) : super(key: key);
@@ -316,7 +317,7 @@ class _HomeClientScreenState extends State<HomeClientScreen> {
                         onTap: ()
                         {
                           if(index == 0){
-
+                            navigateTo(context, const PlansScreen());
                           }else if (index == 1){
                             navigateTo(context, const ExercisesScreen());
                           }else{}
