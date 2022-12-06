@@ -179,4 +179,12 @@ class MainBloc extends Cubit<MainState> {
     emit(ChangeClientRadioButtonState());
   }
 
+  bool? isVisibilityPlanIcon = false;
+  void visibilityPlan()
+  {
+    isVisibilityPlanIcon = !isVisibilityPlanIcon!;
+    emit(ChangeVisibilityPlanState());
+  }
+
+
 }

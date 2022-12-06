@@ -10,7 +10,6 @@ import 'package:gym/core/widgets/myText.dart';
 import 'package:gym/core/widgets/my_icon_button.dart';
 import 'package:gym/features/bank/main_screen/main_screen.dart';
 import 'package:gym/gen/assets.gen.dart';
-
 import '../../../core/cubit/bank_cubit/cubit.dart';
 import '../main_screen/home_client/home_client.dart';
 import 'exercise_type.dart';
