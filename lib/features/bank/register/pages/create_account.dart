@@ -65,7 +65,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
       child: BlocBuilder<MainBloc, MainState>(
         builder: (context, state) {
           return SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Form(
               key: formKey,
               child: Column(

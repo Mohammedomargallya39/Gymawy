@@ -206,8 +206,14 @@ class $AssetsImagesSvgGen {
   /// File path: assets/images/svg/tiktok.svg
   String get tiktok => 'assets/images/svg/tiktok.svg';
 
+  /// File path: assets/images/svg/tiktok_black.svg
+  String get tiktok_black => 'assets/images/svg/tiktok_black.svg';
+
   /// File path: assets/images/svg/profile_pic.svg
   String get profile_pic => 'assets/images/svg/profile_pic.svg';
+
+  /// File path: assets/images/svg/social.svg
+  String get social => 'assets/images/svg/social.svg';
 
   /// File path: assets/images/svg/camera.svg
   String get camera => 'assets/images/svg/camera.svg';
