@@ -94,6 +94,26 @@ class AppString {
   static const delete = 'Delete';
   static const addPlan = 'Add Plan';
   static const nameOfPlan = 'Name Of Plan';
+  static const userNameProfile = 'Abdo Saied';
+  static const accountType = 'Coach';
+  static const location = '10th of Ramdan';
+  static const editProfileButton = 'Edit Profile';
+  static const editLinksButton = 'Edit Links';
+  static const rating = '4/5';
+  static const ratingLabel = 'Ratings';
+  static const followingNumber = '78';
+  static const following = 'Following';
+  static const followersNumber = '5634';
+  static const followers = 'Followers';
+  static const certifications = 'Certifications';
+  static const getCertifications = 'Add Your Certifications Now To Earn Budge';
+  static const editYourProfile = 'Edit Your Profile';
+  static const finish = 'Finish';
+  static const tiktokLink = 'Tiktok Link';
+  static const facebookLink = 'Facebook Link';
+  static const instagramLink = 'Instagram Link';
+  static const youtubeLink = 'Youtube Link';
+
 
 
 

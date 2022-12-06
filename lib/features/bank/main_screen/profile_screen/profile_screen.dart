@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gym/core/cubit/bank_cubit/cubit.dart';
+import 'package:gym/core/utils/appString.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/widgets/myElevatedButton.dart';
 import 'package:gym/core/widgets/myText.dart';
@@ -59,17 +60,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const myText(title: 'Abdo Saied',style: Style.medium,),
-                          const myText(title: 'Coach',style: Style.small,),
+                          const myText(title: AppString.userNameProfile,style: Style.medium,),
+                          const myText(title: AppString.accountType,style: Style.small,),
                           space10Vertical,
                           Row(
                             children: [
-                              myElevatedButton(text: 'Edit Links',fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
+                              myElevatedButton(text: AppString.editLinksButton,fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
                                 navigateTo(context, const EditLinksScreen());
                               }),
                               space3Horizontal,
-                              myElevatedButton(text: 'Edit Profile',fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
-                                navigateTo(context, EditProfileScreen());
+                              myElevatedButton(text: AppString.editProfileButton,fontSize: 10.sp,height: 30.h,width: 80.w, onPressed: (){
+                                navigateTo(context, const EditProfileScreen());
                               })
                             ],
                           ),
@@ -86,7 +87,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const[
                 Icon(Icons.location_on_outlined),
-                myText(title: '10th of Ramadan', style: Style.small),
+                myText(title: AppString.location, style: Style.small),
               ],
             ),
             Padding(
@@ -97,11 +98,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: Column(
                       children: [
                         Text(
-                          '4/5',
+                          AppString.rating,
                           style: Theme.of(context).textTheme.displaySmall,
                         ),
                         Text(
-                          'Ratings',
+                          AppString.ratingLabel,
                           style: Theme.of(context).textTheme.displaySmall!.copyWith(fontWeight: FontWeight.normal),
                         )
                       ],
@@ -116,11 +117,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: Column(
                       children: [
                         Text(
-                          '78',
+                          AppString.followingNumber,
                           style: Theme.of(context).textTheme.displaySmall,
                         ),
                         Text(
-                          'Following',
+                          AppString.following,
                           style: Theme.of(context).textTheme.displaySmall!.copyWith(fontWeight: FontWeight.normal),
                         )
                       ],
@@ -135,11 +136,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: Column(
                       children: [
                         Text(
-                          '5634',
+                          AppString.followersNumber,
                           style: Theme.of(context).textTheme.displaySmall,
                         ),
                         Text(
-                          'Followers',
+                          AppString.followers,
                           style: Theme.of(context).textTheme.displaySmall!.copyWith(fontWeight: FontWeight.normal),
                         )
                       ],
@@ -166,8 +167,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:  [
-                    const myText(title: 'Certifications', style: Style.medium),
-                    Text('Add Your Certifications Now To Earn Budge',
+                    const myText(title: AppString.certifications, style: Style.medium),
+                    Text(AppString.getCertifications,
                     style: Theme.of(context).textTheme.displaySmall!.copyWith(fontWeight: FontWeight.normal),),
                   ],
                 ),

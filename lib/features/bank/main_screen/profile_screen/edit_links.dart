@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gym/core/cubit/bank_cubit/cubit.dart';
+import 'package:gym/core/utils/appString.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/widgets/back_button.dart';
 import 'package:gym/core/widgets/myElevatedButton.dart';
@@ -61,29 +62,29 @@ class _EditLinksScreenState extends State<EditLinksScreen> {
                     children: [
                       myTextFill(
                         controller: facebookLinkController,
-                        hint: 'Facebook Link',
+                        hint: AppString.facebookLink,
                         svgImg: Assets.images.svg.facebook,
                       ),
                       myTextFill(
                         controller: instagramLinkController,
-                        hint: 'Instagram Link',
+                        hint: AppString.instagramLink,
                         svgImg: Assets.images.svg.instagramSvgrepoCom,
                       ),
                       myTextFill(
                         controller: tiktokLinkController,
-                        hint: 'Tiktok Link',
+                        hint: AppString.tiktokLink,
                         svgImg: Assets.images.svg.tiktok_black,
                       ),
                       myTextFill(
                         controller: youtubeLinkController,
-                        hint: 'Youtube Link',
+                        hint: AppString.youtubeLink,
                         svgImg: Assets.images.svg.youtubeSvgrepoCom,
                       ),
                     ],
                   ),
                 ),
               ),
-              myElevatedButton(text: 'Finish', onPressed: (){})
+              myElevatedButton(text: AppString.finish, onPressed: (){})
             ],
           ),
         ),
