@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gym/core/utils/constants.dart';
 import 'package:gym/core/utils/extension.dart';
+import 'package:gym/core/widgets/back_button.dart';
 
 import '../../../core/cubit/bank_cubit/cubit.dart';
 import '../../../core/utils/appString.dart';
@@ -22,7 +23,6 @@ class ExerciseType extends StatefulWidget {
 }
 
 class _ExerciseTypeState extends State<ExerciseType> {
-
   int selected = 0;
   late MainBloc cubit;
   List<TrainingImage> listTrainingImages = [
@@ -40,7 +40,6 @@ class _ExerciseTypeState extends State<ExerciseType> {
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -55,22 +54,16 @@ class _ExerciseTypeState extends State<ExerciseType> {
               children: [
                 Row(
                   children: [
-                    InkWell(
-                      child: SvgPicture.asset(
-                          Assets.images.svg.arrow_back
-                      ),
-                      onTap: ()
-                      {
-                        Navigator.pop(context);
-                      },
-                    ),
+                    DefaultBackButton(function: () {
+                      Navigator.pop(context);
+                    }),
                     const Expanded(
                         child: Center(
                             child: myText(
-                              title: AppString.benchPress, style: Style.large ,fontFamily: 'poppins',
-                            )
-                        )
-                    ),
+                      title: AppString.benchPress,
+                      style: Style.large,
+                      fontFamily: 'poppins',
+                    ))),
                   ],
                 ),
                 space20Vertical,
@@ -124,15 +117,15 @@ class _ExerciseTypeState extends State<ExerciseType> {
                         ),
                       );
                     },
-                    itemCount:  listTrainingImages.length ,
+                    itemCount: listTrainingImages.length,
                   ),
                 ),
                 space30Vertical,
                 const myText(
-                    title: AppString.equipment,
-                    style: Style.medium,
-                    fontWeight: FontWeight.w400,
-                    fontFamily: 'poppins',
+                  title: AppString.equipment,
+                  style: Style.medium,
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'poppins',
                 ),
                 space10Vertical,
                 const myText(
@@ -234,11 +227,10 @@ class _ExerciseTypeState extends State<ExerciseType> {
   }
 }
 
-
 class TrainingImage extends Equatable {
   final String img;
-  const TrainingImage(
-      {required this.img});
+
+  const TrainingImage({required this.img});
 
   @override
   List<Object?> get props => [img];

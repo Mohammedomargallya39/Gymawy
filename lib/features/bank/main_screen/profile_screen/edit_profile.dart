@@ -47,7 +47,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               Row(
                 children: [
                   DefaultBackButton(function: (){
-                    navigateTo(context, const ProfileScreen());
+                    Navigator.pop(context);
                   },),
                   space15Horizontal,
                   const myText(

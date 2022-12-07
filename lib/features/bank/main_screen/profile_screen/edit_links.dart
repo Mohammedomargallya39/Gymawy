@@ -43,7 +43,7 @@ class _EditLinksScreenState extends State<EditLinksScreen> {
                     Align(
                       alignment: AlignmentDirectional.topStart,
                       child: DefaultBackButton(function: () {
-                        navigateTo(context, const ProfileScreen());
+                        Navigator.pop(context);
                       }),
                     ),
                     space15Horizontal,
